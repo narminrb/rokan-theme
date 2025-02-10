@@ -7,11 +7,25 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch src/db/db.json --port 4601"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.0.4",
+    "@tanstack/react-query": "^5.66.0",
+    "@tanstack/react-query-devtools": "^5.66.0",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "json-server": "^1.0.0-beta.3",
+    "postcss": "^8.5.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.29.0",
+    "remixicon": "^4.6.0",
+    "sonner": "^1.7.4",
+    "styled-components": "^6.1.15",
+    "swiper": "^11.2.2",
+    "tailwindcss": "^4.0.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
