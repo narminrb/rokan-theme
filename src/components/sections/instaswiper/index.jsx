@@ -4,17 +4,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation'; 
 import {Navigation } from 'swiper/modules'; 
-import SwiperCard from '../../shared/SwiperCard';
 import { useQuery } from '@tanstack/react-query';
 import { QueryKeys } from '../../../constants/QueryKeys';
 import { getAPiData } from '../../../http/api'; 
 import './style.css'; 
+import InstaSwiperCard from '../../shared/InstaSwiperCard';
 
 
-export default function CustomSwiper() {
+export default function InstaSwiper() {
   const { data, isLoading, isError, error } = useQuery({
-    queryKey: [QueryKeys.SWIPERS],
-    queryFn: async () => await getAPiData('swipers?populate=*')
+    queryKey: [QueryKeys.INSTASWIPERS],
+    queryFn: async () => await getAPiData('instaswipers?populate=*')
   });
 
   if (isLoading) return <p>Loading...</p>;
@@ -23,7 +23,7 @@ export default function CustomSwiper() {
   return (
     <div className="container mx-auto my-10 px-3">
       <Swiper
-        slidesPerView={4}
+        slidesPerView={5}
         spaceBetween={5}
         pagination={{ clickable: true }}
         navigation={{
@@ -37,12 +37,8 @@ export default function CustomSwiper() {
         <div className="swiper-button-prev custom-swiper-button"></div>
             {data?.data?.map((el, index) => (
       <SwiperSlide className="font-worksans" key={index}>
-        <SwiperCard
+        <InstaSwiperCard
           ImageSrc={`http://localhost:1337${el.image?.url}`}
-          HoverImageSrc={el.hoverimage?.url ? `http://localhost:1337${el.hoverimage.url}` : null}
-          desc={el.desc}
-          price={el.price}
-          rating={el.rating}
         />
       </SwiperSlide>
     ))}

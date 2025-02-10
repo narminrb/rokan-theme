@@ -40,25 +40,25 @@
     object-fit: cover;
   }
   
-  /* Swiper Arrows */
+
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: white !important; /* White background */
-  color: black !important; /* Black arrow */
-  border-radius: 50%; /* Circular shape */
-  padding: 15px; /* Adjust size */
-  width: 45px; /* Arrow button width */
-  height: 45px; /* Arrow button height */
+  background-color: white !important; 
+  color: black !important;
+  border-radius: 50%; 
+  padding: 15px;
+  width: 45px; 
+  height: 45px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
-/* Remove default arrow icons */
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 18px !important; /* Adjust icon size */
+  font-size: 18px !important; 
   font-weight: bold;
 }

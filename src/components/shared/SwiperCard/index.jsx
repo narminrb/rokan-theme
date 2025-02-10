@@ -1,19 +1,26 @@
 import React from 'react'
-import { SwiperBody, SwiperContainer, SwiperDescription, SwiperImage, SwiperImageContainer, SwiperText } from '../../ui/SwiperCard'
+import { SwiperBody, SwiperContainer, SwiperDescription, SwiperImage, SwiperImageContainerWithHover, SwiperPrice, SwiperHoverImage, IconsContainer } from '../../ui/SwiperCard'
 
-const SwiperCard = ({ ImageSrc, title,desc }) => {
+const SwiperCard = ({ ImageSrc, HoverImageSrc, desc, price }) => {
     return (
         <SwiperContainer>
-            <SwiperImageContainer>
+            <SwiperImageContainerWithHover>
                 <SwiperImage src={ImageSrc} />
-            </SwiperImageContainer>
+                <SwiperHoverImage src={HoverImageSrc} />
+                <IconsContainer>
+                    <i className="ri-shopping-bag-4-line"></i>
+                    <i className="ri-heart-line"></i>
+                    <i className="ri-file-copy-line"></i>
+                    <i className="ri-search-line"></i>
+                </IconsContainer>
+            </SwiperImageContainerWithHover>
             <SwiperBody>
                 <SwiperDescription>
-                    {title}
-                </SwiperDescription>
-                <SwiperText>
                     {desc}
-                </SwiperText>
+                </SwiperDescription>
+                <SwiperPrice>
+                    {price}
+                </SwiperPrice>
             </SwiperBody>
         </SwiperContainer>
     )

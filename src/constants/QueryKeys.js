@@ -3,5 +3,7 @@ export const QueryKeys = {
     SIZES: "sizes",
     COLORS: "colors",
     SHOPNOWS:"shopnows",
-    SWIPERS:"swipers"
+    SWIPERS:"swipers",
+    DISCOVERNOWS:"discovernows",
+    INSTASWIPERS:"instaswipers",
   };
