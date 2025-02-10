@@ -1,13 +1,16 @@
 import React from 'react'
-import { InstaSwiperContainer, InstaSwiperImage, InstaSwiperImageContainerWithHover } from '../../ui/InstaSwiperCard'
+import { InstaIcon,  InstaSwiperImage, InstaSwiperImageContainerWithHover, Overlay } from '../../ui/InstaSwiperCard'
 
 const InstaSwiperCard = ({ ImageSrc,  }) => {
     return (
-        <InstaSwiperContainer>
-            <InstaSwiperImageContainerWithHover>
-                <InstaSwiperImage src={ImageSrc} />
-            </InstaSwiperImageContainerWithHover>
-        </InstaSwiperContainer>
+        <InstaSwiperImageContainerWithHover>
+        <InstaSwiperImage src={ImageSrc} alt="Instagram Image" />
+        <Overlay>
+          <InstaIcon>
+          <i class="ri-instagram-line"></i>
+            </InstaIcon>
+        </Overlay>
+      </InstaSwiperImageContainerWithHover>
     )
 }
 

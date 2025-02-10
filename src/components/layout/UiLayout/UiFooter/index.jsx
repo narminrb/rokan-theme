@@ -5,29 +5,41 @@ import { Link } from 'react-router-dom';
 const UiFooter = () => {
   return (
     <div>
-<div className="mt-8 bg-violet-900 pt-9">
-  <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+<div className="mt-8 bg-[#383e56] pt-9">
+  <div className="mx-auto w-full  px-4 xl:px-0">
     <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
       <div className="md:w-[316px]">
         <p className="text-[18px] font-medium text-white">
         <h1 className="text-white font-extrabold">
-          <span className="text-rose-600">YOUR</span>LOGO
+          <div className='w-[120px] h-10 object-cover'>
+            <img src="https://rokan-theme.myshopify.com/cdn/shop/files/logo_white.png?v=1719496957&width=360" alt="" />
+          </div>
         </h1>
         </p>
         <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Eos, fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio facere officiis enim animi
           placeat eaque nesciunt alias beatae id, at dicta.</p>
         <div className="mt-[18px] flex gap-4">
-          <a className="hover:scale-110" target="_blank"
-            href="#"></a><a
-            className="hover:scale-110" target="_blank"
-            href="/"></a><a
-            className="hover:scale-110" target="_blank"
-            href="/"></a><a
-            className="hover:scale-110" target="_blank"
-            href=""></a><a
-            className="hover:scale-110" target="_blank"
-            href="https://www.youtube.com/"></a>
+          <a className="hover:scale-110 text-2xl text-white" target="_blank"
+            href="#">
+              <i class="ri-instagram-line"></i>
+              </a><a
+            className="hover:scale-110 text-2xl text-white" target="_blank"
+            href="/">
+              <i class="ri-tiktok-line"></i>
+              </a><a
+            className="hover:scale-110 text-2xl text-white" target="_blank"
+            href="/">
+              <i class="ri-youtube-line"></i>
+              </a><a
+            className="hover:scale-110 text-2xl text-white" target="_blank"
+            href="">
+              <i class="ri-twitter-x-line"></i>
+              </a><a
+            className="hover:scale-110 text-2xl text-white" target="_blank"
+            href="https://www.youtube.com/">
+              <i class="ri-facebook-line"></i>
+            </a>
         </div>
       </div>
       <div className="md:w-[316px]">
