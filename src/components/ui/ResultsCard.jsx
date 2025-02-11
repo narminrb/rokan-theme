@@ -61,12 +61,6 @@ export const SwiperPrice = styled.p`
   color: black;
 `;
 
-export const SwiperDesc = styled.p`
-  background-color:white;
-  font-size: 1rem;
-  font-weight: 500;
-  color: black;
-`;
 
 export const IconsContainer = styled.div`
   position: absolute;

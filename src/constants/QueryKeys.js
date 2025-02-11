@@ -6,4 +6,6 @@ export const QueryKeys = {
     SWIPERS:"swipers",
     DISCOVERNOWS:"discovernows",
     INSTASWIPERS:"instaswipers",
+    LIKES:"likes",
+    RESULTS:"results",
   };

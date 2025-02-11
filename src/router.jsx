@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import HomePage from "./pages/home";
 import UiLayout from "./components/layout/UiLayout";
+import ShopPage from "./pages/shop";
 
 export const Routers = createBrowserRouter([
     {
@@ -16,6 +17,15 @@ export const Routers = createBrowserRouter([
     {
         path: "/about",
         element: <div>About page</div>
+    },
+    {
+        path: "/shop",
+        element: <UiLayout/>,
+        children: [{
+            path:"/shop",
+            element: <ShopPage />,
+            errorElement: <div>Not Found</div>
+        }],
     },
     {
         path: "/contact",
