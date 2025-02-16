@@ -2,6 +2,8 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import HomePage from "./pages/home";
 import UiLayout from "./components/layout/UiLayout";
 import ShopPage from "./pages/shop";
+import BlogPage from "./pages/blog/INDEX.JSX";
+import BlogDetails from "./components/sections/blogdetails";
 
 export const Routers = createBrowserRouter([
     {
@@ -26,6 +28,21 @@ export const Routers = createBrowserRouter([
             element: <ShopPage />,
             errorElement: <div>Not Found</div>
         }],
+    },
+    {
+        path: "/blog",
+        element: <UiLayout/>,
+        children: [{
+            path:"/blog",
+            element: <BlogPage />,
+            errorElement: <div>Not Found</div>
+        },
+        {
+            path: ":slug",  
+            element: <BlogDetails/>, 
+            errorElement: <div>Blog Not Found</div>,
+        }
+    ],
     },
     {
         path: "/contact",
