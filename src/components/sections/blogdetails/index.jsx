@@ -30,7 +30,7 @@ const BlogDetails = () => {
     return (
         <div className="container mx-auto my-10">
             <div className='boxes'>
-            <button className='btn'>News</button>
+            <button className='butn'>News</button>
                 <h1>{blog.title}</h1>
                 <div className="text-[#111111] text-[15px] font-semibold  uppercase">Bersky Bersky-May 25 2024</div>
             </div>
@@ -40,7 +40,10 @@ const BlogDetails = () => {
           <div className='flex flex-col justify-center items-center mx-auto py-10'>
           <div className='max-w-[960px]'>
             <p className='text-[18px] text-[#555555]'>{renderRichText(blog.descc)}</p>
-            <p className='text-[18px] text-[#555555] my-5'>
+             <p className='text-[18px] text-[#555555] my-5 '  style={{
+            wordWrap: 'break-word',  
+            overflowWrap: 'break-word', 
+        }}>
             Umino story began in 1970 with the snow-covered landscape of Montreal as a backdrop. Louis Grenier, a young man whose family worked in the textile industry, was looking to develop technology that could brave the harshest winter conditions. Quickly, his coats gained popularity and became local legend. Unimo strength at that time remains the guarantee of its success today: Living own first saying saw second open third.
             </p>
             <div>
@@ -67,8 +70,6 @@ const BlogDetails = () => {
             </p>
             <h1 className='text-[#111111] text-[20px] uppercase font-medium'>Related articles</h1>
             <DetailSwiper/>
-
-            
             </div>
 
           </div>

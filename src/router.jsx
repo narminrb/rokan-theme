@@ -4,6 +4,7 @@ import UiLayout from "./components/layout/UiLayout";
 import ShopPage from "./pages/shop";
 import BlogPage from "./pages/blog/INDEX.JSX";
 import BlogDetails from "./components/sections/blogdetails";
+import SwiperModal from "./components/sections/swiperModal";
 
 export const Routers = createBrowserRouter([
     {
@@ -13,7 +14,13 @@ export const Routers = createBrowserRouter([
             path:"/",
             element: <HomePage />,
             errorElement: <div>Not Found</div>
-        }],
+        },
+        // {
+        //     path: ":slug",  
+        //     element: <SwiperModal/>, 
+        //     errorElement: <div>Blog Not Found</div>,
+        // }
+    ],
 
     },
     {

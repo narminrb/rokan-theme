@@ -6,6 +6,7 @@ import ShopBanner from '../../components/sections/ShopBanner'
 import BlogPageLayout from '../../components/sections/BlogPage'
 
 const BlogPage = () => {
+
   return (
     <div>
         <ShopBanner/>

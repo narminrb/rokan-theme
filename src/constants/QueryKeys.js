@@ -9,5 +9,7 @@ export const QueryKeys = {
     LIKES:"likes",
     RESULTS:"results",
     BLOGS:"blogs",
-    DETAILSWIPERS:"detailswipers"
+    DETAILSWIPERS:"detailswipers",
+    CATEGORIES:"categories",
+    FILTERS:"filters",
   };
